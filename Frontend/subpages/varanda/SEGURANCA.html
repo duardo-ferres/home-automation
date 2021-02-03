@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Segurança - ETI Solutions Core ®</title>
+<link href="../css/SEGURANCA.css" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="../images/green-icon.png">
+
+<meta content='user-scalable=0' name='viewport' />
+
+<script src="../jquery/jquery-2.1.4.min.js"></script>
+<script src="../script/seguranca.js"></script>
+</head>
+<body leftmargin="0" rightmargin="0" marginheight="0" topmargin="0" marginwidth="0">
+
+<button id="comeBackButton"><img src="../images/arrows/home.png"/></button>
+
+<div id="fullScreen" hidden="true">
+<img class="image" src="" data-rotate="90"/>
+</div>
+
+<div id="centerEquipsFrame">
+	<!-- titulo do frame-->
+    <p class="centerEquipsFrame-title">SEGURANÇA</p>
+	<!-- corpo do frame-->
+    <div class="centerEquipsFrame-body">
+    	<div class="image-frame">
+    		<img id="current-cam" src="http://192.168.0.51:8051/snapshot.cgi?user=admin&pwd=fc7c7wd9&count=17" />
+        </div>
+    	<div class="selector-frame">
+    		<ul>
+                <li>
+                    <img id="current-cam" src="http://192.168.0.50:8050/snapshot.cgi?user=admin&pwd=fc7c7wd9&count=17" />
+                </li>
+                <li>
+                	<img id="current-cam" src="http://192.168.0.51:8051/snapshot.cgi?user=admin&pwd=fc7c7wd9&count=17" />
+                </li>
+                <li>
+                	<img id="current-cam" src="http://192.168.0.50:8050/snapshot.cgi?user=admin&pwd=fc7c7wd9&count=17" />
+                </li>
+                <li>
+                	<img id="current-cam" src="http://192.168.0.51:8051/snapshot.cgi?user=admin&pwd=fc7c7wd9&count=17" />
+                </li>
+                <li>
+                	<img id="current-cam" src="http://192.168.0.50:8050/snapshot.cgi?user=admin&pwd=fc7c7wd9&count=17" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="menu-inferior"><!--define menu inferior na pagina-->
+	<div id="control-bar"> 
+    	<img src="../images/arrows/up.png" style="height:48px;width:48px; margin-left:90%; padding-bottom:16px;"/>
+        <table class="control-bar-table">
+           <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"><button value="goto[iluminacao]"><img src="../images/category/ilumination.png"/></button></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+           <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="2"><button value="goto[audio]"><img src="../images/category/music.png"/></button></td>
+                <td rowspan="2"><button value="goto[video]"><img src="../images/category/video.png"/></button></td>
+                <td></td>
+                <td></td>
+            </tr>
+           <tr>
+                <td></td>
+                <td rowspan="2"><button value="goto[seguranca]"><img src="../images/category/security.png"/></button></td>
+                <td></td>
+                <td rowspan="2"><button value="goto[climatizacao]"><img src="../images/category/climate.png"/></button></td>
+                <td></td>
+            </tr>
+           <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+           <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+<!--footer>
+<hr />
+<center>Ferramenta de Configuração ETI Solutions Core ® - 2016</center>
+</footer-->
+</html>

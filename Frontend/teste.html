@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+	z-index:9;
+	/*background:rgba(146,204,204,0.5);*/
+	background:rgba(146,204,204,0.2);
+	
+	width:10px;
+	height:100%;
+	
+	position:absolute;
+	
+	top:0;
+	left:0;
+	
+	overflow-y: scroll;
+	
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+div:hover {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+<p>Hover over the div element above, to see the transition effect.</p>
+
+</body>
+</html>

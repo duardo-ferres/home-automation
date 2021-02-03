@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Iluminação - ETI Solutions Core ®</title>
+
+<link href="../css/slider.css" rel="stylesheet" type="text/css" />
+<link href="../css/button_togle.css" rel="stylesheet" type="text/css" />
+<link href="../css/iluminacao.css" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="../images/green-icon.png">
+
+<meta content='user-scalable=0' name='viewport' />
+
+<script src="../jquery/jquery-2.1.4.min.js"></script>
+<script src="../script/off-proc-rec.js"></script>
+<!--<script src="../script/ui-integration.js"></script>-->
+
+</head>
+<body leftmargin="0" rightmargin="0" marginheight="0" topmargin="0" marginwidth="0">
+
+<button id="comeBackButton"><img src="../images/arrows/home.png"/></button>
+
+<!--Confirma Deligamento-->
+
+<div id="confirmarGeralOff">
+	<div class="centerBox">
+		<p>Deseja Realmente Desligar Tudo<p>
+		<p><input type="button" class="button sure" name="join()" value="Sim"/> <input type="button" class="button cancel" name="join()" value="Não"/><p>
+	</div>
+</div>
+
+<!--botão desliga Tudo-->
+<div id="poffButton">
+	<img src="../../images/devices/POWER_OFF_I.png"/>
+</div>
+
+<div id="centerEquipsFrame">
+	<!-- titulo do frame-->
+    <p class="centerEquipsFrame-title">ILUMINAÇÃO</p>
+	<!-- corpo do frame-->
+    <div class="centerEquipsFrame-body">
+    	<div class="cargas-dimmer">
+            <div class="equipamento">
+            	<p>ESQUERDA</p>
+        		<input class="horizontalSlider" name="join(28)" type="range" min="0" max="250"/>
+            </div>
+            <div class="equipamento">
+            	<p>DIREITA</p>
+        		<input class="horizontalSlider" name="join(29)" type="range" min="0" max="250"/>
+            </div>
+        </div>
+        
+    	<div class="cargas-relay" align="center">
+            <div class="equipamento">
+            	CENTRO
+                <label class="switch switch-flat">
+                    <input class="switch-input" name="join(323)" type="checkbox" />
+                    <span class="switch-label" data-on="On" data-off="Off"></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+            </div>
+            <div class="equipamento">
+            	PORTA
+                <label class="switch switch-flat">
+                    <input class="switch-input" name="join(345)" type="checkbox" />
+                    <span class="switch-label" data-on="On" data-off="Off"></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="menu-inferior"><!--define menu inferior na pagina-->
+		<div id="control-bar"> 
+    	<img src="../images/arrows/up.png" style="height:48px;width:48px; margin-left:90%; padding-bottom:16px;"/>
+        
+        <table class="control-bar-table">
+           <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"><button value="goto[iluminacao]"><img src="../images/category/ilumination.png"/></button></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+           <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="2"><button value="goto[audio]"><img src="../images/category/music.png"/></button></td>
+                <td rowspan="2"><button value="goto[video]"><img src="../images/category/video.png"/></button></td>
+                <td></td>
+                <td></td>
+            </tr>
+           <tr>
+                <td></td>
+                <td rowspan="2"><button value="goto[seguranca]"><img src="../images/category/security.png"/></button></td>
+                <td></td>
+                <td rowspan="2"><button value="goto[climatizacao]"><img src="../images/category/climate.png"/></button></td>
+                <td></td>
+            </tr>
+           <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+           <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+</body>
+<!--footer>
+<hr />
+<center>Ferramenta de Configuração ETI Solutions Core ® - 2016</center>
+</footer-->
+</html>

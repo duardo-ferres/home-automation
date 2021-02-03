@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ambientes - ETI Solutions Core ®</title>
+<link href="../css/AMBIENTES.css" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="../images/green-icon.png">
+
+<meta content='user-scalable=0' name='viewport' />
+
+<script src="../jquery/jquery-2.1.4.min.js"></script>
+</head>
+<body leftmargin="0" rightmargin="0" marginheight="0" topmargin="0" marginwidth="0">
+
+<!--Confirma Deligamento-->
+
+<style>
+	#confirmarGeralOff{
+		position:absolute;
+		top:0px;
+		left:0px;
+		height:100vh;
+		width:100vw;
+		background-color:rgba(0,0,0,0.6);
+		z-index:50;
+		
+		visibility:hidden;
+	}
+	
+	#confirmarGeralOff .centerBox{
+		position:absolute;
+		
+		top:40vh;
+		left:10vw;
+		
+		height:20vh;
+		width:80vw;
+		
+		background-color:#ddd;
+		border-radius:10px;
+		box-shadow:1px 1px 1px #000, 1px 0px 0px #999;
+		
+		z-index:50;
+		
+		text-align:center;
+		font-size:42px;
+		line-height:100px;
+	}
+	
+	#confirmarGeralOff .centerBox .button{
+		height:100px;
+		width:240px;
+		margin-left:20px;
+		margin-right:20px;
+		
+		font-size:42px;
+		line-height:100px;
+		
+		border: outset;
+	}
+</style>
+<script>
+function show_confirmation(){
+		$("#confirmarGeralOff").css("visibility", "visible");
+}
+
+function hidde_confirmation(){
+		$("#confirmarGeralOff").css("visibility", "hidden");		
+}
+
+function cleanCookies()
+{
+		//Reseta valores em cookies
+		var d = new Date();
+		d.setTime(d.getTime()+(100*24*60*60*1000));
+		var expires = "expires="+d.toUTCString();
+		
+		var cookies = document.cookie;
+		var cookie = String(cookies).split(" ");
+		
+		for(i=0;i<cookie.length;i++)
+		{
+			if(cookie[i].indexOf("join") >= 0)
+			{
+				document.cookie = String(cookie).split("=")[0]+"=0;";+expires+";path=/";
+			}
+		}
+}
+</script>
+
+<div id="confirmarGeralOff">
+	<div class="centerBox">
+		<p>Deseja Realmente Desligar Tudo<p>
+		<p><button class="button sure" value="join(351);goto[sala_de_estar>ambiente]" onclick="cleanCookies()">SIM</button> <button class="button cancel" onclick="hidde_confirmation()">NÃO</button><p>
+	</div>
+</div>
+
+<div id="centerEquipsFrame">
+	<!-- titulo do frame-->
+    <p class="centerEquipsFrame-title">GERAL</p>
+	<!-- corpo do frame-->
+    <div class="centerEquipsFrame-body">
+    	<button class="centerEquipsFrame-body-option" value="goto[iluminacao]" style="visibility:hidden">
+        	<img src="../images/category/ilumination.png" align="middle"/> Desligar Tudo
+        </button>
+        
+    	<button class="centerEquipsFrame-body-option" value="" onclick="show_confirmation()">
+        	<img src="../images/category/ilumination.png" align="middle"/> Desligar Tudo
+        </button>
+        
+    	<button class="centerEquipsFrame-body-option" value="goto[audio]" style="visibility:hidden">
+        	<img src="../images/category/music.png" align="middle"/> Audio
+        </button>
+        
+    	<button class="centerEquipsFrame-body-option" value="goto[climatizacao]" style="visibility:hidden">
+        	<img src="../images/category/climate.png" align="middle"/> Climatização
+        </button>
+        
+    	<button class="centerEquipsFrame-body-option" value="goto[seguranca]" style="visibility:hidden">
+        	<img src="../images/category/security.png" align="middle"/> Segurança
+        </button>
+    </div>
+</div>
+
+<div id="ambientCarrousel">
+    <table class="list">
+        <tr>
+        	<td class="list-aba" colspan="11">
+                    <img src="../images/arrows/up.png" />
+            </td>
+        </tr>
+        <tr>
+            <td>                
+                    <button class="list-item" value="goto[sala_de_estar>ambiente]"><img src="../images/ambient/estar.png"/></button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[cozinha>ambiente]"><img src="../images/ambient/cozinha.png"/></button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[sala_de_jantar>ambiente]"><img src="../images/ambient/jantar.png" /> </button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[suite_1>ambiente]"><img src="../images/ambient/suite.png" /> </button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[suite_2>ambiente]"><img src="../images/ambient/quarto.png" /> </button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[suite_3>ambiente]"><img src="../images/ambient/quarto.png" /> </button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[varanda>ambiente]"><img src="../images/ambient/churrasco.png"/></button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[spa>ambiente]"><img src="../images/ambient/spa.png"/></button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[garagem>ambiente]"><img src="../images/ambient/garagem.png" /> </button>                
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[home>ambiente]"><img src="../images/ambient/home.png" /> </button>                
+            </td>
+            <td hidden="hidden">                
+                    <button class="list-item" value="goto[jardim>ambiente]"><img src="../images/ambient/jardim.png"/></button>                
+            </td>
+            <td hidden="hidden">                
+                    <button class="list-item" value="goto[portaria>ambiente]"><img src="../images/ambient/portaria.png" /> </button>
+            </td>
+            <td>                
+                    <button class="list-item" value="goto[geral>power]"><img src="../images/ambient/power.png" /> </button>
+            </td>
+		</tr>
+    </table>
+</div>
+</body>
+<!--footer>
+<hr />
+<center>Ferramenta de Configuração ETI Solutions Core ® - 2016</center>
+</footer-->
+</html>
